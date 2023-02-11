@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>H2 node: it is child of body node and sibiling of a ul node </h2>
+  <ul>
+    <li>li node: it is first child of ul node</li>
+    <li>li node is child of ul node</li>
+    <li>li node: it is last child of ul node</li>
+  </ul>
+    <p>p node : it is a child of div node</p>
+  <script>
+    const docNode = document;
+    const htmlNode = document.documentElement;
+    const headNode = document.head;
+    const bodyNode = document.body;
+    const commentNode = document.createComment('A random comment');
+    const scriptNode = document.querySelector('script')
+    console.log('Main Document Node', docNode);
+    console.log('HTML Node:', htmlNode);
+    console.log('Head Node:', headNode);
+    console.log('Body Node:', bodyNode);
+    console.log('Comment Node:', commentNode);
+    console.log('Script Node:' , scriptNode)
+  </script>
+</body>
+
+</html>
